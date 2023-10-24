@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed and Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+<body>
+        <!-- As a heading-top of the page -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+    <span class="navbar-brand mb-0 h1"><i class="fa-brands fa-instagram"></i>Instagram</span>
+    
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Create a new post
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <h6><spam style="padding:3px"></spam>Caption:</h6>
+          <p><span class="border rounded"></border>Add the caption of your post here</span></p>
+          <span class="border .bg-light.bg-gradient p-1 rounded"><i class="fa-solid fa-camera"></border></i></span> <spam style="padding-left: 10px"> </span> <span class="border .bg-light.bg-gradient p-1 rounded"><i class="fa-solid fa-location-dot"></i></span><spam>
+        </div>
+
+        <div class="modal-footer">
+            
+          <button type="button" class="btn btn-secondary rounded data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success rounded">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!----Dropdown-->
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Profile</a></li>
+      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+      <li><a class="dropdown-item" href="#">SPrivacy Data</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Log out</a></li>
+    </ul>
+    </div>
+  </div>
+  </nav>
+
+  <!---javascript behavior-->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></i></button>
+
+  </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/craftart">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/greenart">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/natureart">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/pinksart">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/redart">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/art">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/flowersart">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/natureart">
+          </div>
+          <div class="col-4 p-1">
+            <img src="https://loremflickr.com/400/300/purpleart">
+          </div>
+        </div>
+    <div>
+
+    
+<!-----tab 1 grid-->
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class=container>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-4" p-0>
+           
+
+            <div class="d-flex justify-content-between align-items-center border p-1 t-2">
+            <h2>My crazy dog Spark</h2>
+            <h6>08/26</h6></div>
+
+          
+            <img src="https://picsum.photos/id/237/500/400" class="img-fluid" alt="Responsive image">
+
+            <div class="border p-1">
+            <p><b>204 Likes</b></p>
+            <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    
+
+ 
+  
+  
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+</body>
+</html>
